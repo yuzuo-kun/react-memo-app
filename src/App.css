@@ -1,0 +1,69 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.memo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.memo-input input,
+.memo-input select {
+  padding: 8px;
+}
+
+.memo-input button {
+  padding: 8px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.memo-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.memo-search input,
+.memo-search select {
+  padding: 8px;
+}
+
+.memo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.memo-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  align-items: center;
+  cursor: grab;
+  transition: background 0.2s;
+}
+
+.memo-item:active {
+  cursor: grabbing;
+  background: #e0e0e0;
+}
+
+
+.memo-list .tag {
+  font-size: 0.8rem;
+  color: #777;
+  margin-left: 10px;
+}
